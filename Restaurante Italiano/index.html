@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<title>Restaurante Pedras Negras</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: Verdana}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("images/pizza.jpg");
+    min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Barra de navegação -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">INÍCIO</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">SOBRE NÓS</a>
+    <a href="#contato" class="w3-bar-item w3-button">CONTATO</a>
+    <a href="formulário.html" class="w3-bar-item w3-button">RESERVAS</a>
+  </div>
+</div>
+  
+<!-- Cabeçalho -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Aberto de 6ª a Domingo</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:80px">FESTIVAL<br>ITALIANO</span>
+  
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Vamos ao Menu!</a></p>
+  </div>
+</header>
+
+<!-- Seção Menu -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">NOSSO MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey" style="font-size:32px">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Antepastos');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Antepastos</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Entradas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Entradas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pratos Principais');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pratos Principais</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sobremesas');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sobremesas</div>
+      </a>
+    </div>
+
+
+    <div id="Antepastos" class="w3-container menu w3-padding-32 w3-white" style="font-size:26px">
+      <h1><b>Antipasti misti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$36.50</span></h1>
+      <p class="w3-text-grey">Antepastos variados: berinjela, pimentão e marinada de camarão com polvo</p>
+      <hr>
+   
+      <h1><b>Antipasto di Carpaccio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$35.50</span></h1>
+      <p class="w3-text-grey">Canapés com fatias de carpaccio e molho de alcaparras com parmesão</p>
+      <hr>
+      
+      <h1><b>Antipasto di Botarga</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$42.50</span></h1>
+      <p class="w3-text-grey">Fatias de pão com manteiga e lascas de Botarga</p>
+      <hr>
+
+      <h1><b>Misto di Prosciutto di Parma e Parmeggiano Reggiano</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$72.50</span></h1>
+      <p class="w3-text-grey">Tábua de presunto Parma e lascas de Parmesão</p>
+      <hr>
+
+    </div>
+
+
+    <div id="Entradas" class="w3-container menu w3-padding-32 w3-white" style="font-size:26px">
+      <h1><b>Carpaccio</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">R$28.50</span></h1>
+      <p class="w3-text-grey">Carpaccio ao molho de alcaparras com croutons e rúcula</p>
+      <hr>
+   
+      <h1><b>Insalata Caprese</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$29.50</span></h1>
+      <p class="w3-text-grey">Salada de rúcula com mozarela de búfala, tomate cereja e manjericão</p>
+      <hr>
+      
+      <h1><b>Bruschetta ai tri funghi</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$32.50</span></h1>
+      <p class="w3-text-grey">Bruschetta coberta de champignons de Paris, Pleurotus e Porto Belo</p>
+      <hr>
+    </div>
+
+
+    <div id="Pratos Principais" class="w3-container menu w3-padding-32 w3-white" style="font-size:26px">
+      <h1><b>Spaghetti alle Zucchine e Bottarga</b> <span class="w3-tag w3-grey w3-round">Sugestão do Chef</span><span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:26px">R$58.50</span></h1>
+      <p class="w3-text-grey">Espaguete com abobrinha e lascas de Botarga</p>
+      <hr>
+   
+      <h1><b>Risotto ai Funghi Porcini</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$62.50</span></h1>
+      <p class="w3-text-grey">Risoto de Funghi Porcini</p>
+      <hr>
+      
+      <h1><b>Ravioli di Brie</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$66.50</span></h1>
+      <p class="w3-text-grey">Ravioli de queijo Brie com alcachofra ao molho de limão siciliano confit</p>
+      <hr>
+      
+      <h1><b>Trota della casa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$72.50</span></h1>
+      <p class="w3-text-grey">Filé de truta grelhado ao molho de alcaparras com limão siciliano e risoto de alcachofra</p>
+      <hr>
+    
+      <h1><b>Ossobuco di Vitello</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$66.50</span></h1>
+      <p class="w3-text-grey">Ossobuco de Vitelo ao molho de vinho tinto com Funghi Porcini e polenta gratinada com queijo Parmesão</p>
+    </div>
+
+
+    <div id="Sobremesas" class="w3-container menu w3-padding-32 w3-white" style="font-size:26px">
+      <h1><b>Tiramisù</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$28.50</span></h1>
+      <p class="w3-text-grey">Sobremesa a base de mascarpone e café</p>
+      <hr>
+   
+      <h1><b>Panna Cotta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$26.50</span></h1>
+      <p class="w3-text-grey">Panna Cotta de frutas vermelhas</p>
+      <hr>
+      
+      <h1><b>Uva Flambé</b> <span class="w3-right w3-tag w3-dark-grey w3-round">R$26.50</span></h1>
+      <p class="w3-text-grey">Taça de uva Itália confit flambada na grappa</p>
+      <hr>
+      
+    </div><br>
+  </div>
+</div>
+
+<!-- Seção "Sobre Nós" -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Sobre Nós</h1>
+    <p>O Restaurante Pedras Negras foi fundado em 1990 por Seu Dalvi, na antiga rua da Pedras Negras. 
+      Filho de italianos, começou o restaurante como uma forma de manter a cultura italiana de sua família.</p>
+    <p><strong>O Chef?</strong> Seu Dalvi Júnior, filho de Seu Dalvi<img src="images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Mantemos nossa cultura viva.</p>
+    <img src="images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurante">
+    <h1 class="w3-center"><b>Horários de Abertura</b></h1>
+    
+    <div class="w3-center w3-row">
+      <div class="w3-col s6">
+        <p>Sexta-feira</p>
+        <p>18:00 - 24.00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Sábado</p>
+        <p>11:00 - 23:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Domingo </p>
+        <p>11:00 - 15:00</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Segunda à Quinta</p>
+        <p>Fechado</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!-- Contato -->
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contato">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contato</h1>
+    <p>Encontre-nos na rua Parnamirim</p>
+    <p>Telefone: (27) 3333-4444</p>
+    <p>Oferecemos serviço de reservas! Faça uma reserva por telefone ou pelo nosso <strong><a href="formulário.html">formulário</a></strong>.</p>
+  </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p><strong>RESTAURANTE PEDRAS NEGRAS</strong></p>
+</footer>
+
+<!-- Menu -->
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+</body>
+</html>

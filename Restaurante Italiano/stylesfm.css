@@ -1,0 +1,29 @@
+body{
+    background-color: dimgray;
+}
+
+.form{
+    justify-content: center;
+    border: 0.1cm solid;
+    text-align: center;
+}
+.nome{
+    background-color: white;
+    width: 744px;
+    height:36px;
+}
+
+.botao{
+    background-color: white;
+    width: 744px;
+    height:36px;
+}
+
+.popup{
+    background-color: dimgray;
+    width: 600px;
+    height:250px;
+    display: absolute;
+    margin-left: auto;
+    margin-right: auto;   
+}

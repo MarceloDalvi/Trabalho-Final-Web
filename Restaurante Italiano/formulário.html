@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesfm.css"> 
+  <link rel="stylesheet" href="css/w3.css"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+  <title>Formulario</title>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="w3-top w3-hide-small">
+    <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+      <a href="index.html" class="w3-bar-item w3-button">INÍCIO</a>
+      <a href="index.html#menu" class="w3-bar-item w3-button">MENU</a>
+      <a href="index.html#about" class="w3-bar-item w3-button">SOBRE NÓS</a>
+      <a href="index.html#contato" class="w3-bar-item w3-button">CONTATO</a>
+      <a href="formulário.html" class="w3-bar-item w3-button">RESERVAS</a>
+    </div>
+  </div>
+
+  <div class="form">
+  <div id="googleMap" class="w3-grayscale-max"></div>
+  <div class="w3-center w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+    <div class="w3-content">
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">RESERVAS</h1>
+      <p class="w3-xxlarge">Preencha o formulário abaixo:</p>
+      <form method="POST" target="_blank">
+        <p><input class="nome" type="text" placeholder="Nome" required name="Nome" id="nome"></p>
+        <p><input class="nome" type="number" placeholder="Número de Pessoas" required name="Pessoas" min=1 max=12 id="pessoas"></p>
+        <p><input class="nome" type="text" placeholder="Mensagem / Solicitação"></p>
+        <p><input class="nome" type="number" placeholder="Escolher a Mesa" required name="Mesa" min=1 max=6 id="mesa"></p>
+        <style>
+          #pop{display:none;position:-webkit-sticky;width:750px;height:400px;border:1px solid #d0d0d0;}
+          </style>
+          </head>
+          <body>
+          <div class="popup" id="pop">
+            <br />
+            <img src="images/mapademesa.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Mapa de Mesas">
+          <a href="#" onclick="document.getElementById('pop').style.display='none';"><p>[Fechar]</p></a>
+          
+          </div>
+          
+          <a href="#" onclick="document.getElementById('pop').style.display='block';">Mostrar Mesas</a>
+
+        <p class="w3-center">Data:</p>
+        <p><input class="nome" type="date" placeholder="Dia e Hora" required name="Data" value="2020-06-16T20:00" id="data"></p>
+        <p class="w3-center">Escolha o Horário:</p> <p><input class="nome" name="Horario" required name="Horário" list="listadehoras" id="horario"></p>
+        <datalist id="listadehoras">
+          <option value="11:00"></option>
+          <option value="12:00"></option>
+          <option value="13:00"></option>
+          <option value="14:00"></option>
+          <option value="15:00"></option>
+          <option value="16:00"></option>
+          <option value="17:00"></option>
+          <option value="18:00"></option>
+          <option value="19:00"></option>
+          <option value="20:00"></option>
+          <option value="21:00"></option>
+          <option value="22:00"></option>
+          <option value="23:00"></option>
+        </datalist>
+        
+
+          <p><button class="botao" type="submit" onClick="enviar();">ENVIAR</button>
+      </form>
+    </div>
+  </div>
+ </div>
+
+</body>
+</html>
